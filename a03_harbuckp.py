@@ -15,20 +15,20 @@ def rectangle(t, sz, leftsz):
     t.right(90)
     t.forward(leftsz)
 
-def snowflakes(t, sz, petals ):
-    petals = 3
-
+def snowflakes(X,Y,t, sz):
+    t.goto(X,Y)
     t.shape("turtle")
     t.color("#4181EE")
     t.penup()
+    t.shapesize(3)
     for backpetal in range (2):
 
         for flower in range(12):
             t.stamp()
             t.right(30)
-        t.shapesize(petals - 1)
+        t.shapesize(2)
         t.color("#72A6FD")
-        petals = 3
+
 
 def main():
 
@@ -44,20 +44,30 @@ def main():
     nex.backward(200)
     nex.pendown()
 
+    nex.fillcolor("#5C6678")
+    nex.begin_fill()
     rectangle(nex, 500, 500)
+    nex.end_fill()
     nex.penup()
     nex.backward(25)
     nex.right(90)
     nex.forward(150)
     nex.pendown()
+
+
+
     for coloumns in range(2):
 
          for windows in range(6):
+            nex.fillcolor("#DDEDFA")
+            nex.begin_fill()
             rectangle(nex, 100, 50)
             nex.penup()
             nex.backward(80)
             nex.right(90)
             nex.pendown()
+            nex.end_fill()
+
          nex.penup()
          nex.left(90)
          nex.forward(480)
@@ -65,25 +75,43 @@ def main():
          nex.forward(150)
          nex.pendown()
 
+
+
     for topwin in range(6):
+        nex.fillcolor("#DDEDFA")
+        nex.begin_fill()
         rectangle(nex, 25, 50)
         nex.penup()
         nex.backward(80)
         nex.right(90)
         nex.pendown()
+        nex.end_fill()
+
+
     nex.penup()
     nex.backward(450)
     nex.left(90)
     nex.forward(450)
     nex.pendown()
     nex.right(90)
+    nex.fillcolor("#6B6555")
+    nex.begin_fill()
     rectangle(nex, 100, 60)
+    nex.end_fill()
 
-    nex.goto(-100,-150)
-    snowflakes(nex, 90, 10)
+    nex.penup()
 
-    nex.goto(200, 200)
-    snowflakes(nex,90,10)
+    snowflakes(-100,-150, nex, 90)
+
+    snowflakes(250, 240, nex,90)
+
+    snowflakes(-200,50, nex,90)
+
+    snowflakes(250, -250, nex, 90)
+
+    snowflakes(-100,60,nex, 90)
+
+    snowflakes(100, 100, nex, 90)
 
     wn.exitonclick()
 main()
