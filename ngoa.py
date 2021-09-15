@@ -6,47 +6,47 @@
 # Purpose: Learns about RGB color with turtle and using turtle proficiently
 # Google Doc: https://docs.google.com/document/d/14_qzl73L14HsjTSGOL5SGxO3t4WSWaUL987MQjC0A6s/edit#
 ######################################################################
+# import turtle module
+import turtle
+
+# basic setting for screen and turtle characteristics
+turtle.colormode(255)
+screen = turtle.Screen()
+screen.bgcolor("beige")
+screen.screensize(700,700)
+screen.title("Draw a penguin with Anh!")
+turtle.speed(9)
+turtle.hideturtle()
+turtle.colormode(255)
+
+def draw_oval(x, y, big_radius, small_radius, color):
+    """
+    x: Abscissa on the axis
+    y: Ordinate on the axis
+    big_radius: the bigger radius of the eclipse
+    small_radius: the smaller radius of the eclipse
+    color: color using to fill the area
+    This is a function to draw different parts of the pigeon by eclipses
+    """
+    turtle.up()
+    turtle.goto(x, y)
+    turtle.down()
+    turtle.fillcolor(color)
+    turtle.begin_fill()
+    turtle.seth(45)
+    turtle.color(color)
+    turtle.circle(big_radius, 90)
+    turtle.color(color)
+    turtle.circle(small_radius, 90)
+    turtle.color(color)
+    turtle.circle(big_radius, 90)
+    turtle.color(color)
+    turtle.circle(small_radius, 90)
+    turtle.end_fill()
+
 def main():
-
-    # import turtle module
-    import turtle
-
-    # basic setting for screen and turtle characteristics
-    turtle.colormode(255)
-    screen = turtle.Screen()
-    screen.bgcolor("beige")
-    screen.screensize(700,700)
-    screen.title("Draw a penguin with Anh!")
-    turtle.speed(9)
-    turtle.hideturtle()
-    turtle.colormode(255)
-
-
-    def draw_oval(x,y,big_radius,small_radius,color):
-        """
-        x: Abscissa on the axis
-        y: Ordinate on the axis
-        big_radius: the bigger radius of the eclipse
-        small_radius: the smaller radius of the eclipse
-        color: color using to fill the area
-        This is a function to draw different parts of the pigeon by eclipses
-        """
-        turtle.up()
-        turtle.goto(x,y)
-        turtle.down()
-        turtle.fillcolor(color)
-        turtle.begin_fill()
-        turtle.seth(45)
-        turtle.color(color)
-        turtle.circle(big_radius,90)
-        turtle.color(color)
-        turtle.circle(small_radius,90)
-        turtle.color(color)
-        turtle.circle(big_radius,90)
-        turtle.color(color)
-        turtle.circle(small_radius,90)
-        turtle.end_fill()
-
+    """using draw_oral function to draw different parts of the penguin
+    and print out a cute text"""
     # draw big body
     draw_oval(70,-150, 250,125,(0,0,0))
     # draw eye area
