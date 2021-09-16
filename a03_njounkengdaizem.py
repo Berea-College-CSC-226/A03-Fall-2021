@@ -15,11 +15,11 @@ def background ():
     backgd.hideturtle()
     backgd.penup()
     backgd.speed(0)
-    backgd.setpos(-650, -180)
+    backgd.setpos(-650, -180)                                #Sets position for background filling
     backgd.pendown()
     backgd.color("#40E0D0")
     backgd.begin_fill()
-    for i in range(4):
+    for i in range(4):                                        #Fills background
         backgd.forward(1600)
         backgd.left(90)
     backgd.end_fill()
@@ -53,7 +53,7 @@ def sqareshape():
     square.setpos(-100, -180)
     square.pendown()
     square.begin_fill()
-    for i in range(4):
+    for i in range(4):                                        #Draws square
         square.forward(200)
         square.left(90)
     square.end_fill()
@@ -68,7 +68,7 @@ def roofing():
     roof.begin_fill()
     roof.goto(-125, 20)
     roof.pendown()
-    for i in range(3):
+    for i in range(3):                                      #Draws roof
         roof.forward(250)
         roof.left(120)
     roof.end_fill()
@@ -83,7 +83,7 @@ def chimneytop():
     chimney.pendown()
     chimney.color("brown")
     chimney.begin_fill()
-    chimney.left(90)
+    chimney.left(90)                                                 #Draws chimney
     chimney.forward(70)
     chimney.left(90)
     chimney.forward(20)
@@ -91,7 +91,7 @@ def chimneytop():
     chimney.forward(40)
     chimney.end_fill()
 
-    smoke = turtle.Turtle()
+    smoke = turtle.Turtle()                                        #Turtle that creates smoke
     smoke.hideturtle()
     smoke.color("gray")
     smoke.penup()
@@ -122,7 +122,7 @@ def frontdoor():
     door.color("brown")
     door.begin_fill()
     door.pendown()
-    door.left(90)
+    door.left(90)                                      #Draws door
     door.forward(90)
     door.left(90)
     door.forward(60)
@@ -138,7 +138,7 @@ def frontdoor():
     knob.goto(-10, -140)
     knob.pendown()
     knob.begin_fill()
-    knob.circle(3)
+    knob.circle(3)                                            #Draws circular knob
     knob.end_fill()
 
 def window():
@@ -150,7 +150,7 @@ def window():
     win.penup()
     win.goto(-80, -70)
     win.pendown()
-    for i in range(4):
+    for i in range(4):                                    #Draws windows
         win.forward(40)
         win.left(90)
     win.penup()
@@ -184,13 +184,13 @@ def sunny():
     sun.goto(-500, 200)
     sun.pendown()
     sun.begin_fill()
-    for i in range(10, 50):
+    for i in range(10, 50):                            #Draws circular sun
         sun.circle(i)
     sun.end_fill()
 
 def cloudsky():
     """ Define function that draws the clouds in the sky"""
-    cloud = turtle.Turtle()
+    cloud = turtle.Turtle()                             #turtle that draws clouds in the sky in the form of 3 circles
     cloud.speed(0)
     cloud.hideturtle()
     cloud.penup()
@@ -212,7 +212,7 @@ def cloudsky():
 
 def tree():
     """ Define function that draws the trees"""
-    tr = turtle.Turtle()
+    tr = turtle.Turtle()                               #Draws tree. First rectangle, then circles
     tr.hideturtle()
     tr.color("#808000")
     tr.penup()
