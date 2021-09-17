@@ -15,7 +15,6 @@ tess.pencolor("white")
 
 
 
-
 # start of the head
 def make_head():
     """
