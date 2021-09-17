@@ -10,6 +10,9 @@ import turtle
 
 #Waves
 def olas (lg):
+    """
+    Draws the blue waves, similar to the Boustrophedon
+    """
     olitas = turtle.Turtle()
     olitas.hideturtle()
     olitas.speed(10)
@@ -32,6 +35,9 @@ def olas (lg):
 
 #Mountains
 def montanitas (hght):
+    """
+    Draws the series of brown mountains in the back
+    """
     monta = turtle.Turtle()
     monta.hideturtle()
     monta.speed(0)
@@ -51,6 +57,9 @@ def montanitas (hght):
         monta.end_fill()
 
 def sun():
+    """
+    Draws the sun in the middle of the sky
+    """
     solecito = turtle.Turtle()
     solecito.hideturtle()
     solecito.speed(0)
@@ -65,6 +74,9 @@ def sun():
 
 #Clouds
 def sky ():
+    """
+    Draws the two spirals in the sky
+    """
     clouds = turtle.Turtle()
     clouds.color (0,139,139)
     clouds.hideturtle()
