@@ -2,7 +2,7 @@
 # Author: Kyle Drummonds
 # Username: drummondsk
 # Google Docs: https://docs.google.com/document/d/1MinJ08KtjtmUmBsiooU1D00y3z0911M7_YCjq4wOiVE/edit?usp=sharing
-# Assignment: A03: Fully Functional Gitty Psychedelic Robotic Turtles
+# Assignment: A03: Fully Functional Gitty Psychedelic Robotic Turtles.
 # Purpose: Using turtles to create complex structures
 ######################################################################
 import turtle
