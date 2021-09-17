@@ -1,7 +1,9 @@
 #####################################################################################################################
 # Name: Ethan Campbell
 # Username: campbelle2
+#
 # Assignment: A03
+# Purpose: This will make a house in a pretty forested area!
 # Google Doc Link: https://docs.google.com/document/d/1HTNFVbuYYJo1rWLEh1L9kYekHd9TefO3PxlP40nxlK0/edit?usp=sharing
 ########################################################################################################################
 
